@@ -1,0 +1,218 @@
+@charset "UTF-8";
+body, ol, ul, h1, h2, h3, h4, h5, h6, p, th, td, dl, dd, form, fieldset, legend, input, textarea, select {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: 12px "瀹嬩綋","Arial Narrow",HELVETICA;
+  background: #fff;
+}
+
+a {
+  color: #172c45;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #f00;
+  text-decoration: none;
+}
+
+em {
+  font-style: normal;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  border: 0;
+  vertical-align: middle;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+p {
+  word-wrap: break-word;
+}
+
+.ind {
+  text-indent: 2em;
+}
+
+.ind10 {
+  text-indent: 10px;
+}
+
+.noborder {
+  border: 0;
+}
+
+.login-main {
+  width: 100%;
+  height: 100%;
+}
+.login-main .login-header {
+  width: 1000px;
+  height: 80px;
+  margin-top: 40px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.login-main .login-header .left {
+  float: left;
+}
+.login-main .login-header .right {
+  width: 445px;
+  height: 28px;
+  float: right;
+  margin-top: 20px;
+  background: url("../../resource/imgs/loginmain.png") no-repeat 0 -188px;
+}
+.login-main .login-content {
+  width: 1000px;
+  height: 600px;
+  margin: 0 auto;
+}
+.login-main .login-content .left {
+  float: left;
+  margin-left: 50px;
+  margin-top: 50px;
+}
+.login-main .login-content .right {
+  float: right;
+  width: 370px;
+  margin-top: 30px;
+}
+.login-main .login-content .right .word {
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+.login-main .login-content .right .word span {
+  font-weight: bold;
+}
+.login-main .login-content .right .login-name {
+  margin-top: 10px;
+}
+.login-main .login-content .right .login-name .login-input-name {
+  width: 263px;
+  height: 33px;
+  border: 1px solid #bfbdbf;
+  border-radius: 3px;
+  font-size: 14px;
+  line-height: 33px;
+  color: #4c4c4c;
+  border-color: #bfbdbf;
+  padding-left: 10px;
+}
+.login-main .login-content .right .login-warning {
+  color: #b2b2b2;
+  line-height: 300%;
+  font-size: 12px;
+}
+.login-main .login-content .right .login-password .login-input-password {
+  width: 263px;
+  height: 33px;
+  border: 1px solid #bfbdbf;
+  border-radius: 3px;
+  font-size: 14px;
+  line-height: 33px;
+  color: #4c4c4c;
+  border-color: #bfbdbf;
+  padding-left: 10px;
+}
+.login-main .login-content .right .login-password-err {
+  color: #f20266;
+  line-height: 25px;
+  height: 25px;
+}
+.login-main .login-content .right .submit {
+  margin: 5px 0;
+}
+.login-main .login-content .right .submit .login-btn {
+  cursor: pointer;
+  color: #fff;
+  width: 140px;
+  height: 40px;
+  background: url("../../resource/imgs/loginmain.png") no-repeat;
+  background-position: -142px -1px;
+  border: none;
+  display: block;
+  font-size: 16px;
+}
+.login-main .login-content .right .submit .login-btn:focus {
+  outline: none;
+}
+.login-main .login-content .right .remark {
+  margin-top: 15px;
+  overflow: hidden;
+}
+.login-main .login-content .right .remark .remark-left {
+  color: #666;
+  font-size: 12px;
+  float: left;
+}
+.login-main .login-content .right .remark .remark-left .remember-name {
+  vertical-align: middle;
+}
+.login-main .login-content .right .remark .remark-right {
+  float: right;
+  margin-right: 100px;
+}
+.login-main .login-content .right .remark .remark-right .forget-pw {
+  color: #666;
+}
+.login-main .login-content .right .remark .remark-right .link-register {
+  color: #f10180;
+}
+.login-main .login-content .right .link-for-login {
+  width: 280px;
+  margin-top: 30px;
+  line-height: 200%;
+  font-size: 12px;
+}
+.login-main .login-content .right .link-for-login .red-line {
+  height: 0px;
+  border-bottom: 1px dashed #eeeeee;
+  overflow: hidden;
+}
+.login-main .login-content .right .link-for-login .link-for-icon {
+  margin-top: 20px;
+  color: #666;
+}
+.login-main .login-content .right .link-for-login .link-for-icon a {
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
+  display: inline-block;
+  margin-top: 7px;
+  cursor: pointer;
+}
+.login-main .login-content .right .link-for-login .link-for-icon .icon-weibo {
+  background: url("../../resource/imgs/loginmain.png") no-repeat -142px -122px;
+}
+.login-main .login-content .right .link-for-login .link-for-icon .icon-qq {
+  background: url("../../resource/imgs/loginmain.png") no-repeat -166px -122px;
+}
+.login-main .login-content .right .link-for-login .link-for-icon .icon-weixin {
+  background: url("../../resource/imgs/loginmain.png") no-repeat -214px -122px;
+}
+.login-main .login-footer {
+  width: 1000px;
+  text-align: center;
+  color: #666666;
+  height: 50px;
+  margin: 0 auto;
+}
+.login-main .login-footer .aboutus a {
+  color: #555;
+  padding: 0 11px;
+  font-size: 14px;
+  line-height: 36px;
+}

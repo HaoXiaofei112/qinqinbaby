@@ -1,0 +1,155 @@
+@charset "UTF-8";
+body, ol, ul, h1, h2, h3, h4, h5, h6, p, th, td, dl, dd, form, fieldset, legend, input, textarea, select {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: 12px "瀹嬩綋","Arial Narrow",HELVETICA;
+  background: #fff;
+}
+
+a {
+  color: #172c45;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #f00;
+  text-decoration: none;
+}
+
+em {
+  font-style: normal;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  border: 0;
+  vertical-align: middle;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+p {
+  word-wrap: break-word;
+}
+
+.ind {
+  text-indent: 2em;
+}
+
+.ind10 {
+  text-indent: 10px;
+}
+
+.noborder {
+  border: 0;
+}
+
+.login-main .login-content .right .register-login {
+  word-spacing: 5px;
+}
+.login-main .login-content .right .register-login .fr {
+  margin-right: 90px;
+}
+.login-main .login-content .right .register-login .fr a {
+  color: #f10180;
+}
+.login-main .login-content .right .login-error {
+  color: #f20266;
+  line-height: 25px;
+  height: 25px;
+  width: 100%;
+  font-size: 12px;
+  visibility: hidden;
+}
+.login-main .login-content .right .login-name .register-input-code {
+  width: 118px;
+}
+.login-main .login-content .right .login-name .send-code {
+  width: 120px;
+  height: 30px;
+  border: 1px solid #ffbd89;
+  background: #fff5ed;
+  border-radius: 3px;
+}
+.login-main .login-content .right .register-identifying {
+  width: 280px;
+  overflow: hidden;
+}
+.login-main .login-content .right .register-identifying input {
+  float: left;
+}
+.login-main .login-content .right .register-identifying span {
+  display: inline-block;
+  width: 70px;
+  height: 30px;
+  border: 1px solid #bfbdbf;
+  cursor: pointer;
+  float: left;
+  text-align: center;
+  line-height: 30px;
+  margin: 0 6px;
+  background: #ffbd89;
+  font-size: 15px;
+  letter-spacing: 2px;
+}
+.login-main .login-content .right .register-identifying a {
+  color: #ff9710;
+  cursor: pointer;
+  float: left;
+  line-height: 30px;
+}
+.login-main .login-content .right .register-sex .radio {
+  font-size: 14px;
+  cursor: pointer;
+  margin-right: 7px;
+}
+.login-main .login-content .right .register-sex .radio i {
+  background: url("../../resource/imgs/loginmain.png") no-repeat;
+  background-position: -12px -50px;
+  width: 13px;
+  height: 13px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+}
+.login-main .login-content .right .register-sex .radio .radio-active {
+  background-position: -12px -70px;
+}
+.login-main .login-content .right .register-read {
+  margin-top: 15px;
+}
+.login-main .login-content .right .register-read .checkbox {
+  vertical-align: middle;
+  font-size: 12px;
+  color: #666;
+  cursor: pointer;
+  display: inline-block;
+}
+.login-main .login-content .right .register-read .checkbox i {
+  background: url("../../resource/imgs/loginmain.png");
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  background-position: -30px -50px;
+  cursor: pointer;
+  vertical-align: middle;
+  position: relative;
+  bottom: 2px;
+  left: 2px;
+}
+.login-main .login-content .right .register-read .checkbox .checkbox-active {
+  background-position: -30px -69px;
+}
+.login-main .login-content .right .register-read .checkbox a {
+  color: #f43499;
+  cursor: pointer;
+}

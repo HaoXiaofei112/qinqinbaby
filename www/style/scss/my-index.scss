@@ -1,0 +1,98 @@
+@import "public";
+body{
+  font-size: 12px;
+  color: #030303;
+  background: #fff;
+  overflow-x: hidden;
+  font-family: arial,\5B8B\4F53,sans-serif;
+}
+.my-index-container{
+  .header{
+    border-bottom: 2px solid #e6e6e6;
+    padding-bottom: 10px;
+
+    .topbar{
+      text-align: right;
+      height: 36px;
+      line-height: 36px;
+
+      .header-bg{
+        height: 42px;
+        background: url("../../resource/imgs/header_imgs.png") repeat-x;
+
+        .header-nav{
+          height: 43px;
+          width: 1190px;
+          margin: 0 auto;
+
+          .item-toIndex{
+            float: left;
+            display: inline-block;
+            width: 90px;
+            height: 42px;
+            line-height: 42px;
+            text-align: center;
+            background-position: 0 0;
+            font-size: 14px;
+            font-weight: 700;
+            background-image: url("../../resource/imgs/new_imgs.png");
+            background-repeat: no-repeat;
+          }
+
+          .header-nav-contact{
+            float: right;
+            height: 36px;
+            overflow: hidden;
+
+            .contact-server{
+              display: inline-block;
+              float: left;
+              height: 42px;
+              background-position: -300px -200px;
+              padding-left: 25px;
+              font-size: 14px;
+              line-height: 42px;
+              margin-right: 15px;
+              background-image: url("../../resource/imgs/new_imgs.png");
+              background-repeat: no-repeat;
+            }
+
+            .about{
+              height: 32px;
+              float: left;
+              overflow: hidden;
+              z-index: 9999;
+              padding: 0 1px 1px;
+              position: relative;
+
+              li{
+                line-height: 1.8;
+                padding: 0 18px 0 32px;
+                a{
+                  color: #333;
+                }
+              }
+
+              .about-top{
+                background-image: url("../../resource/imgs/new_imgs.png");
+                background-repeat: no-repeat;
+                background-position: -150px -150px;
+                padding-top: 10px;
+              }
+            }
+          }
+        }
+
+        .header-toolwp{
+          width: 1190px;
+          margin-left: -595px;
+          height: 20px;
+          left: 50%;
+          position: absolute;
+          z-index: 80;
+
+        }
+      }
+    }
+  }
+}

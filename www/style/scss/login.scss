@@ -1,0 +1,213 @@
+@import "public";
+
+.login-main{
+  width:100%;
+  height:100%;
+
+  .login-header{
+    width: 1000px;
+    height: 80px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+
+    .left{
+      float: left;
+    }
+
+    .right{
+      width: 445px;
+      height: 28px;
+      float: right;
+      margin-top: 20px;
+      background: url("../../resource/imgs/loginmain.png") no-repeat 0 -188px;
+    }
+  }
+
+  .login-content{
+    width: 1000px;
+    height: 600px;
+    margin:0 auto;
+    //background: #2997b7;
+
+    .left{
+      float:left;
+      margin-left: 50px;
+      margin-top: 50px;
+    }
+
+    .right{
+      float: right;
+      width:370px;
+      margin-top: 30px;
+
+      .word{
+        margin-bottom: 20px;
+        font-size: 14px;
+
+        span{
+          font-weight: bold;
+        }
+      }
+
+      .login-name{
+        margin-top: 10px;
+
+        .login-input-name{
+          width: 263px;
+          height: 33px;
+          border: 1px solid #bfbdbf;
+          border-radius: 3px;
+          font-size: 14px;
+          line-height: 33px;
+          color: #4c4c4c;
+          border-color: #bfbdbf;
+          padding-left: 10px;
+        }
+
+      }
+
+      .login-warning{
+        color: #b2b2b2;
+        line-height: 300%;
+        font-size: 12px;
+      }
+
+      .login-password{
+
+        .login-input-password{
+          width: 263px;
+          height: 33px;
+          border: 1px solid #bfbdbf;
+          border-radius: 3px;
+          font-size: 14px;
+          line-height: 33px;
+          color: #4c4c4c;
+          border-color: #bfbdbf;
+          padding-left: 10px;
+        }
+      }
+
+      .login-password-err{
+        color: #f20266;
+        line-height: 25px;
+        height: 25px;
+        //display: none;
+      }
+
+      .submit{
+        margin:5px 0;
+
+        .login-btn{
+          cursor: pointer;
+          color: #fff;
+          width: 140px;
+          height: 40px;
+          background:url("../../resource/imgs/loginmain.png") no-repeat;
+          background-position: -142px -1px;
+          border: none;
+          display: block;
+          font-size: 16px;
+        }
+
+        .login-btn:focus{
+          outline:none;
+        }
+      }
+
+      .remark{
+        margin-top: 15px;
+        overflow: hidden;
+        .remark-left{
+          color: #666;
+          font-size: 12px;
+          float: left;
+
+          .remember-name{
+            vertical-align: middle;
+          }
+
+        }
+
+        .remark-right{
+          float: right;
+          margin-right:100px;
+
+          .forget-pw{
+            color: #666;
+          }
+
+          .link-register{
+            color: #f10180;
+          }
+        }
+
+      }
+
+      .link-for-login{
+        width: 280px;
+        margin-top: 30px;
+        line-height: 200%;
+        font-size: 12px;
+
+        .red-line{
+          height: 0px;
+          border-bottom: 1px dashed #eeeeee;
+          overflow: hidden;
+        }
+
+        .link-for-icon{
+          //padding-left: 120px;
+          margin-top: 20px;
+          color:#666;
+
+
+          a{
+            width: 24px;
+            height: 24px;
+            margin-right: 5px;
+            display: inline-block;
+            margin-top: 7px;
+            cursor: pointer;
+          }
+
+          .icon-weibo{
+            background:url('../../resource/imgs/loginmain.png') no-repeat -142px -122px;
+          }
+          .icon-qq{
+            background:url('../../resource/imgs/loginmain.png') no-repeat -166px -122px;
+          }
+          .icon-weixin{
+            background:url('../../resource/imgs/loginmain.png') no-repeat -214px -122px;
+          }
+        }
+
+      }
+
+
+    }
+
+
+
+  }
+
+  .login-footer{
+    width: 1000px;
+    text-align: center;
+    color: #666666;
+    height: 50px;
+    margin:0 auto;
+
+    .aboutus{
+
+      a{
+        color: #555;
+        padding: 0 11px;
+        font-size: 14px;
+        line-height: 36px;
+      }
+    }
+  }
+
+}

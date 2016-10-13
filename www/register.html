@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>亲亲宝贝-注册</title>
+    <link rel="icon" type="image/x-icon" href="resource/imgs/favicon.ico">
+    <link rel="stylesheet" href="style/css/login.css">
+    <link rel="stylesheet" href="style/css/register.css">
+</head>
+<body>
+<div class="login-main">
+    <!--************register-main************************-->
+    <div class="login-header">
+        <div class="left">
+            <a href="index.html">
+                <img src="resource/imgs/logo.gif" alt="亲亲宝贝网上商城">
+            </a>
+        </div>
+
+        <div class="right"></div>
+    </div>
+
+    <!--************register-content************************-->
+    <div class="login-content">
+        <div class="left">
+            <a href="index.html">
+                <img src="resource/imgs/registerbigbg.png">
+            </a>
+        </div>
+
+        <div class="right">
+            <div class="register-login"><span class="fr">已注册？
+                <a href="login.html">登录</a></span>没有账号？请注册</div>
+
+            <!--************注册页--用户名*************-->
+            <div class="login-name register-name">
+                <input id="register-username" type="text" class="login-input-name" placeholder="数字/字母/下划线">
+            </div>
+
+            <!--************注册页--用户名已存在*************-->
+            <div class="login-error user-error-info" ></div>
+
+            <!--<div class="login-name register-sex">-->
+				<!--<label><input type="radio" class="register-sprite" name="sex" value="1" checked="checked">先 生&nbsp;&nbsp;&nbsp;</label>-->
+        		<!--<label><input type="radio" class="register-sprite" name="sex" value="0">女 士</label>-->
+            <!--</div>-->
+
+            <!--************注册页--选择性别*************-->
+            <div class="login-name register-sex">
+                <span class="radio"><i class="register-sprite radio-active" name="sex" value="1"></i> 先 生 </span>
+                <span class="radio"><i class="register-sprite" name="sex" value="0"></i> 女 士</span>
+                <input type="hidden" name="sex" value="1">
+            </div>
+
+            <!--************注册页--未选择性别*************-->
+            <div class="login-error" style="visibility: hidden">请选择性别!</div>
+
+            <!--************注册页--密码*************-->
+            <div class="login-name register-password">
+                <input id="register-password" type="password" class="login-input-name login-input-password" placeholder="密码">
+            </div>
+
+            <!--************注册页--未输入密码*************-->
+            <div class="login-error pw-error-info" ></div>
+
+            <!--************注册页--确认密码*************-->
+            <div class="login-name register-password">
+                <input id="password-again" type="password" class="login-input-name login-input-password" placeholder="确认密码">
+            </div>
+
+            <!--************注册页--确认密码不正确或未输入*************-->
+            <div class="login-error pwc-error-info">请输入确认密码!</div>
+			
+			<div class="login-name register-identifying">
+				<input type="text" class="login-input-name register-input-code register-input-code-num">
+				<span class="change code-number">1234</span>
+				<a class="change">换一张</a>
+			</div>
+			
+			<div class="login-name register-identifying-vioce">
+				<input type="text" class="login-input-name register-input-code" placeholder="获取语音验证码">
+				<button class="send-code">获取语音验证码</button>
+			</div>
+			<div class="login-error confirm-code">请确认验证码!</div>
+			
+			<div class="submit">
+                <button class="login-btn">注册</button>
+            </div>
+            
+            <div class="register-read">
+				<span class="checkbox">
+                    <i class="checkbox-active"></i>
+                    我已阅读并接受
+                    <a href="javascript:;" class="protocol">亲亲宝贝服务条款</a>
+		        </span>
+	    	</div>
+   			<div class="login-error">请阅读亲亲宝贝服务条款后勾选</div>
+			
+        </div>
+    </div>
+    <!--************login-footer************************-->
+    <div class="login-footer">
+        <div class="aboutus">
+            <a href="http://www.qinqinbaby.com/home/footer/about" target="_blank">关于我们</a><span>|</span>
+            <a href="http://www.qinqinbaby.com/home/footer/touch" target="_blank">联系我们</a><span>|</span>
+            <a href="http://www.qinqinbaby.com/home/footer/job" target="_blank">招贤纳士</a><span>|</span>
+            <a href="http://www.qinqinbaby.com/home/footer/zhaoshang" target="_blank">商家入驻</a><span >|</span>
+            <a href="http://www.qinqinbaby.com/home/footer/friendlink" target="_blank">友情链接</a><span>|</span>
+            <!-- <a href="http://www.qinqinbaby.com/question/" target="_blank">帮助中心&amp;FAQ</a> -->
+        </div>
+        <div class="msg">© 亲亲宝贝网2003-2014 qinqinbaby.com All Rights Reserved&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;京公安网备11010802015478号 京ICP备11017831号</div>
+
+    </div>
+</div>
+
+<script src="vendor/jQuery/jquery-1.12.1.js"></script>
+<!--<script src="js/common.js"></script>-->
+<script src="js/cookie.js"></script>
+<script src="js/register.js"></script>
+
+
+
+</body>
+</html>

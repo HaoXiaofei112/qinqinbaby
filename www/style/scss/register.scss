@@ -1,0 +1,129 @@
+@import "public";
+.login-main{
+  .login-content{
+    .right{
+
+      .register-login{
+        word-spacing: 5px;
+        .fr{
+          margin-right: 90px;
+          a{
+            color: #f10180;
+          }
+        }
+      }
+
+      .login-error{
+        color: #f20266;
+        line-height: 25px;
+        height: 25px;
+        width: 100%;
+        font-size: 12px;
+        visibility: hidden;
+      }
+
+      .login-name{
+
+        .register-input-code{
+          width: 118px;
+        }
+
+        .send-code{
+          width: 120px;
+          height: 30px;
+          border: 1px solid #ffbd89;
+          background: #fff5ed;
+          border-radius: 3px;
+        }
+      }
+
+      .register-identifying{
+        width:280px;
+        overflow: hidden;
+        input{
+          float: left;
+        }
+        span{
+          display: inline-block;
+          width:70px;
+          height: 30px;
+          border: 1px solid #bfbdbf;
+          cursor: pointer;
+          float: left;
+          text-align: center;
+          line-height: 30px;
+          margin:0 6px;
+          background: #ffbd89;
+          font-size: 15px;
+          letter-spacing: 2px;
+        }
+        a{
+          color: #ff9710;
+          cursor: pointer;
+          float: left;
+          line-height: 30px;
+        }
+      }
+
+      .register-sex{
+        .radio{
+          font-size: 14px;
+          cursor: pointer;
+          margin-right: 7px;
+          i{
+            background:url("../../resource/imgs/loginmain.png") no-repeat;
+            background-position: -12px -50px;
+            width: 13px;
+            height: 13px;
+            display: inline-block;
+            position: relative;
+            vertical-align: middle;
+          }
+
+          .radio-active{
+            background-position: -12px -70px;
+          }
+        }
+
+
+      }
+
+      .register-read{
+        margin-top: 15px;
+        .checkbox{
+          vertical-align: middle;
+          font-size: 12px;
+          color: #666;
+          cursor: pointer;
+          display: inline-block;
+          i{
+            background:url("../../resource/imgs/loginmain.png");
+            width: 14px;
+            height: 14px;
+            display: inline-block;
+            background-position: -30px -50px;
+            cursor: pointer;
+            vertical-align: middle;
+            position: relative;
+            bottom: 2px;
+            left: 2px;
+          }
+          .checkbox-active{
+            background-position: -30px -69px;
+
+          }
+
+          a{
+            color: #f43499;
+            cursor: pointer;
+          }
+        }
+
+
+      }
+
+
+
+    }
+  }
+}

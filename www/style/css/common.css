@@ -1,0 +1,408 @@
+body, ol, ul, h1, h2, h3, h4, h5, h6, p, th, td, dl, dd, form, fieldset, legend, input, textarea, select {
+    margin: 0;
+    padding: 0
+}
+
+body {
+    font: 12px "宋体", "Arial Narrow", HELVETICA;
+    background: #fff;
+}
+
+a {
+    color: #172c45;
+    text-decoration: none
+}
+
+a:hover {
+    color: #f00;
+    text-decoration: none;
+}
+
+em {
+    font-style: normal
+}
+
+li {
+    list-style: none
+}
+
+img {
+    border: 0;
+    vertical-align: middle
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+p {
+    word-wrap: break-word;
+}
+
+.ind {
+    text-indent: 2em
+}
+
+.ind10 {
+    text-indent: 10px;
+}
+
+.noborder {
+    border: 0;
+}
+
+/*-------------------------------commonhead------------------------------------------*/
+.commonhead {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+
+}
+
+/*-------------------------------commonhead--shortcut------------------------------------------*/
+.commonhead .shortcut {
+    width: 1080px;
+    height: 30px;
+    margin: 0 auto;
+    line-height: 30px;
+    color: #666666;
+}
+
+.commonhead .shortcut ul {
+    width: 460px;
+    float: right;
+}
+
+.commonhead .shortcut ul li {
+    float: left;
+}
+
+.commonhead .shortcut a {
+    color: #e60012;
+    padding: 0 6px;
+    cursor: pointer;
+}
+
+.commonhead .shortcut b {
+    padding: 0 6px;
+    color: #d9d9d9;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.commonhead .shortcut .server-phone {
+    float: right;
+    padding-left: 25px;
+    background: url(../../resource/imgs/phone.png) no-repeat left 6px;
+}
+
+/*-------------------------------commonhead--search------------------------------------------*/
+.commonhead .search {
+    width: 1080px;
+    height: 76px;
+    margin: 0 auto;
+
+}
+
+.commonhead .search .logo {
+    float: left;
+}
+
+.commonhead .search .nav {
+    float: left;
+    padding-left: 77px;
+    font-size: 14px;
+    color: #666666;
+    padding-top: 13px;
+    height: 36px;
+    line-height: 36px;
+}
+
+.commonhead .search .search-right {
+    float: right;
+    padding: 4px 0 0 0;
+}
+
+.commonhead .search .search-right .search-right-1 .text {
+    float: left;
+    border: 2px solid #e60012;
+    height: 30px;
+    width: 420px;
+    padding: 0 5px;
+}
+
+.text:focus{
+    outline:none;
+}
+
+.commonhead .search .search-right .search-right-1 .btn {
+    float: left;
+    border: none;
+    font-size: 18px;
+    width: 102px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    background: #e60012;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn:focus{
+    outline:none;
+}
+
+.commonhead .search .list {
+    line-height: 28px;
+    padding-bottom: 8px;
+}
+
+.commonhead .search .list a {
+    padding: 0 10px;
+    font-size: 12px;
+    font-family: "宋体";
+    border-left: 1px solid #d9d9d9;
+}
+
+.commonhead .search .list .first {
+    border: none;
+}
+
+/*-------------------------------topshow------------------------------------------*/
+.topshow img {
+    display: block;
+    width: 100%;
+}
+
+/*-------------------------------commonfoot------------------------------------------*/
+.commonfoot {
+    width: 100%;
+    padding-top: 7px;
+    background: #f0f0f0 url("../../resource/imgs/btmrpt.jpg") repeat-x 0 0;
+    margin-top: 30px;
+}
+
+.commonfoot .footinner {
+    width: 1080px;
+    height: auto;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+/*----------------新手入门-微信-微博等等-------------------*/
+.commonfoot .footinner .footinner-top {
+    height: auto;
+    overflow: hidden;
+    padding-top: 32px;
+    border-bottom: 1px solid #d9d9d9;
+    font-family: \5B8B\4F53;
+    font-size: 12px;
+}
+
+/*----------------------新手入门等-----------------------------*/
+.commonfoot .footinner .footinner-top .left {
+    padding-left: 12px;
+    float: left;
+}
+
+.commonfoot .footinner .footinner-top .left dl {
+    float: left;
+    padding-left: 25px;
+    width: 107px;
+    height: 149px;
+    color: #666;
+}
+
+.commonfoot .footinner .footinner-top .left dl dt {
+    height: 22px;
+    line-height: 22px;
+    font-weight: bold;
+    padding-bottom: 7px;
+}
+
+.commonfoot .footinner .footinner-top .left dl dd {
+    height: 24px;
+    line-height: 24px;
+}
+
+/*-----------------------中间边框------------------------*/
+.commonfoot .footinner .footinner-top .middle {
+    float: left;
+    margin-top: 7px;
+    height: 111px;
+    width: 31px;
+    border-left: 1px solid #d9d9d9;
+}
+
+/*-----------------------右部微信 微博------------------------*/
+.commonfoot .footinner .footinner-top .right {
+    padding-left: 5px;
+    float: left;
+}
+
+.commonfoot .footinner .footinner-top .right .right-ul li {
+    float: left;
+    margin: 0 19px;
+    margin-left: 10px;
+    display: inline;
+    width: 122px;
+    text-align: center;
+}
+
+.commonfoot .footinner .footinner-top .right .right-ul li p {
+    height: 42px;
+    line-height: 42px;
+    font-size: 14px;
+    font-family: \5FAE\8F6F\96C5\9ED1;
+    color: #333333;
+}
+
+/*-----------------------关于我们 友情链接------------------------*/
+.commonfoot .footinner .footinner-btm {
+    text-align: center;
+    padding-top: 12px;
+}
+
+/*-----------------------关于我们------------------------*/
+.commonfoot .footinner .footinner-btm .msglink {
+    height: 28px;
+    line-height: 28px;
+}
+
+.commonfoot .footinner .footinner-btm .msglink a {
+    padding: 0 20px;
+    color: #555555;
+    font-size: 14px;
+    font-family: \5FAE\8F6F\96C5\9ED1;
+}
+
+.commonfoot .footinner .footinner-btm .friend-links {
+    height: 25px;
+    width: 580px;
+    margin: 0 auto;
+    color: #777777;
+    font-size: 12px;
+    overflow: hidden;
+}
+
+.commonfoot .footinner .footinner-btm .friend-links span {
+    float: left;
+    line-height: 25px;
+    margin: 0 10px;
+    color: #999;
+}
+
+.commonfoot .footinner .footinner-btm .friend-links .link-index {
+    float: left;
+    overflow: hidden;
+    position: relative;
+    width: 500px;
+    padding: 0;
+    margin: 0 auto;
+    float: left;
+    height: 25px;
+}
+
+.commonfoot .footinner .footinner-btm .friend-links .link-index ul {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.commonfoot .footinner .footinner-btm .friend-links .link-index ul li {
+    float: left;
+    margin-right: 7px;
+    line-height: 25px;
+}
+
+.commonfoot .footinner .footinner-btm .friend-links .link-index ul li a {
+    color: #999;
+}
+
+.commonfoot .footinner .footinner-btm .msg {
+    height: 14px;
+    line-height: 14px;
+    font-size: 12px;
+    color: #888888;
+    font-family: \5FAE\8F6F\96C5\9ED1;
+    text-align: center;
+}
+
+.commonfoot .footinner .footinner-btm .tel {
+    width: 450px;
+    text-align: center;
+    height: 44px;
+    line-height: 44px;
+    color: #333333;
+    font-size: 14px;
+    font-family: \5FAE\8F6F\96C5\9ED1;
+    padding-bottom: 1px;
+    padding-left: 36px;
+    margin: 0 auto;
+}
+
+.commonfoot .footinner .footinner-btm .tel b {
+    float: left;
+    margin-top: 16px;
+    width: 21px;
+    height: 14px;
+    background: url("../../resource/imgs/phone.jpg") no-repeat 0 0;
+}
+
+.commonfoot .footinner .footinner-btm .imglink {
+    width: 480px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.commonfoot .footinner .footinner-btm .imglink ul {
+    margin-left: 120px;
+}
+
+.commonfoot .footinner .footinner-btm .imglink ul li {
+    float: left;
+    padding-right: 10px;
+}
+
+/*-----------------------右部返回顶部邮箱客服------------------------*/
+
+.bodyright {
+    width: 88px;
+    position: fixed;
+    right: 10px;
+    top: 5px;
+    z-index: 9999;
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

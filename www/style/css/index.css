@@ -1,0 +1,222 @@
+body, ol, ul, h1, h2, h3, h4, h5, h6, p, th, td, dl, dd, form, fieldset, legend, input, textarea, select {
+    margin: 0;
+    padding: 0
+}
+
+body {
+    font: 12px "宋体", "Arial Narrow", HELVETICA;
+    background: #fff;
+}
+
+a {
+    color: #172c45;
+    text-decoration: none
+}
+
+a:hover {
+    color: #f00;
+    text-decoration: none;
+}
+
+em {
+    font-style: normal
+}
+
+li {
+    list-style: none
+}
+
+img {
+    border: 0;
+    vertical-align: middle
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+p {
+    word-wrap: break-word;
+}
+
+.ind {
+    text-indent: 2em
+}
+
+.ind10 {
+    text-indent: 10px;
+}
+
+.noborder {
+    border: 0;
+}
+
+/*-------------------------------home------------------------------------------*/
+.home {
+    width: 100%;
+    height: 100%; /*background:greenyellow;*/
+}
+
+/*----------------------inner-轮播图----------------------------*/
+.home .main {
+    height: 729px;
+    width: 100%;
+    background: url("../../resource/imgs/mdbg.png") no-repeat;
+}
+
+.home .main .inner {
+    width: 965px;
+    height: 685px;
+    padding: 0 60px 0 64px;
+    margin: 0 auto;
+    /*background: #f00;*/
+}
+
+.home .main .inner .iphone {
+    float: left;
+    width: 287px;
+    height: 596px;
+    margin-top: 55px;
+    background: url("../../resource/imgs/phonesm.png") no-repeat;
+    overflow: hidden;
+}
+
+.home .main .inner .iphone .iphoneinner {
+    width: 237px;
+    height: 424px;
+    overflow: hidden;
+    margin: 81px 0 0 27px;
+    background: #fff;
+}
+
+.home .main .inner .iphone ul {
+    position: relative;
+    height: 424px;
+    width: 2130px;
+}
+
+.home .main .inner .iphone ul li {
+    float: left;
+}
+
+/*---------------------inner-右边---------------------------*/
+.home .main .inner .iphone-right {
+    float: left;
+    padding-top: 50px;
+    color: #fff;
+}
+
+.home .main .inner .iphone-right .word {
+    width: 672px;
+    height: 162px;
+    background: url("../../resource/imgs/qinqintext.png") no-repeat center top;
+}
+
+.home .main .inner .iphone-right .ewm {
+    display: block;
+    background: url("../../resource/imgs/ewmsm.png") no-repeat left top;
+    width: 179px;
+    height: 219px;
+    margin: -35px auto 0;
+}
+
+.home .main .inner .iphone-right .toy {
+    width: 390px;
+    height: 146px;
+    margin: 20px auto 0;
+}
+
+.home .main .inner .iphone-right .toy img {
+    position: relative;
+    left: 0;
+    bottom: 0;
+}
+
+/*---------------------inner-右下边-轮播文字描述---------------------------*/
+.home .main .inner .iphone-right .btm {
+    margin: 40px auto 0;
+    width: 550px;
+}
+
+.home .main .inner .iphone-right .btm ul {
+    overflow: hidden;
+}
+
+.home .main .inner .iphone-right .btm ul li {
+    float: left;
+    cursor: pointer;
+    width: 16.66667%;
+    text-align: center;
+}
+
+.home .main .inner .iphone-right .btm ul li .line {
+    margin: 3px auto 24px;
+    height: 8px;
+    width: 74px;
+    background: #2997b7;
+}
+
+.home .main .inner .iphone-right .btm ul li h2 {
+    font-size: 18px;
+    color: #108db1;
+}
+
+.home .main .inner .iphone-right .btm ul li p {
+    white-space: nowrap;
+    font-size: 14px;
+    color: #108db1;
+    font-family: "微软雅黑";
+    padding-top: 5px;
+}
+
+/*---------------------承诺/超时获赔---------------------------*/
+.home .set-promise {
+    width: 1080px;
+    height: auto;
+    overflow: hidden;
+    margin: 80px auto 0;
+}
+
+.home .set-promise ul li {
+    float: left;
+    width: 33.333%;
+    text-align: center;
+}
+
+.home .set-promise ul li p {
+    line-height: 126px;
+    padding-bottom: 16px;
+    font-size: 24px;
+    color: #3d4649;
+    font-weight: normal;
+}
+
+.home .set-promise .btm {
+    float: left;
+    height: 138px;
+    width: 1078px;
+    border: 1px solid #e5e5e5;
+    background: url("../../resource/imgs/promissm.png") no-repeat center center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

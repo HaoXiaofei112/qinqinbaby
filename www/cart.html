@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>亲亲宝贝-购物车</title>
+    <link rel="icon" type="image/x-icon" href="resource/imgs/favicon.ico">
+    <link rel="stylesheet" href="style/css/index.css">
+    <link rel="stylesheet" href="style/css/common.css">
+    <link rel="stylesheet" href="style/css/template.css">
+    <link rel="stylesheet" href="style/css/cart.css">
+</head>
+<body>
+<div class="cart-container">
+    <div class="cart-head">
+        <div class="cart-shortcut cart">
+            <div class="vip-left">
+                <ul>
+                    <li>您好,&nbsp;&nbsp;<a href="#" class="user"></a>&nbsp;&nbsp;!</li>
+                    <li><a href='login.html' class="btn_reg">&nbsp;&nbsp;&nbsp;&nbsp;[退出]</a></li>
+                </ul>
+            </div>
+
+            <div class="vip-right">
+                <ul>
+                    <li><a href="#">我的订单</a><span>|</span></li>
+                    <li><a href="#">会员中心</a><span>|</span></li>
+                    <li><a href="cart.html" class="only">购物车</a><span>|</span></li>
+                    <li class="weixin">
+                        <a href="cart.index" rel="nofollow">关注<b></b></a>
+                        <div class="weixin-list">
+                            <dl>
+                                <dd>用微信扫一扫</dd>
+                                <dt><img width="90px" height="90px" src="resource/imgs/twocode.jpg"></dt>
+                                <dd>订阅亲亲宝贝微信</dd>
+                            </dl>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="cart-logo cart">
+        <h1><a href="index.html"></a></h1>
+        <p></p>
+    </div>
+
+    <div class="cart-time cart">
+        <div class="left">
+            <div class="spancart"></div>
+            <span class="mycarter">我的购物车</span>
+        </div>
+        <div class="right">
+            <ul>
+                <li>
+                    <small class="zp"></small>
+                    <span>正品保证</span></li>
+                <li>
+                    <small class="sv"></small>
+                    <span>7天无理由退货</span></li>
+                <li>
+                    <small class="sd"></small>
+                    <span>闪电发货</span></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!--******************购物车有商品时***************************-->
+    <div class="cartlist cart">
+        <div class="head">
+            <label><input type="checkbox" class="all-select" id="all" checked="checked">
+                <span class="all-select-word">全选</span></label>
+            <span class="price">单价（元）</span>
+            <span class="num"> 数量（件）</span>
+            <span class="count">小计</span>
+            <span class="operate">操作</span>
+        </div>
+        <div class="body">
+            <dl>
+                <dt>
+                    <b>
+                        <input type="checkbox" checked="checked">
+                    </b>
+                    <span>亲亲宝贝自营</span>
+                </dt>
+                <dd>
+                    <table>
+                        <!--***************tbody为空时，隐藏cartlist/cartmsg**************-->
+                        <tbody></tbody>
+                        <tfoot>
+                        <tr>
+                            <td colspan="2" height="44" width="230px"></td>
+                            <td colspan="5" class="cart-totle">
+                                <input type="hidden" class="shop-id" value="286">
+                                <span>运费：<b class="msyh post">¥0.00</b>元</span>
+                                <span>&nbsp;&nbsp;&nbsp;&nbsp;商品金额：<b class="msyh fee">¥981.00</b>元</span>
+                                <span>&nbsp;&nbsp;&nbsp;&nbsp;小计：<b class="cash total" style="letter-spacing: 1px;">¥981.00</b>元</span>
+                            </td>
+                        </tr>
+                        </tfoot>
+                    </table>
+                </dd>
+            </dl>
+        </div>
+    </div>
+
+    <div class="cartmsg cart">
+        <div class="coupon">
+            <div class="use-coupon"><a href="#"><i></i>使用优惠券</a></div>
+            <span class="coupon-msg"><a href="#"> (优惠券使用说明)</a></span>
+        </div>
+
+        <div class="countcart">
+            <div class="countcart_txt">【提示：如果您购买的商品有海淘商品,请去会员中心进行实名认证！】</div>
+            <ul>
+                <li>
+                    <span class="lil lil1">商品金额：</span>
+                    <span class="lil lil1">满减优惠：</span>
+                    <span class="lil lil1">优惠券：</span>
+                    <span class="lil lil2">运&nbsp;&nbsp;&nbsp;费：</span>
+                </li>
+                <li>
+                    <span class="lir lir1 totalfee">¥981.00</span>
+                    <span class="lir lir1 promofee">¥0.00</span>
+                    <span class="lir lir1 couponfee">¥0.00</span>
+                    <span class="lir lir2 postfee">¥0.00</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="sub clear">
+            <a href="index.html" class="clr_org">继续购买<span>&gt;&gt;</span></a>
+            <div class="submin">
+                <p class="gouwucar">应付金额：<span class="clr_org endfee">¥981.00</span></p>
+                <input type="submit" value="" class="ljwconfirm">
+            </div>
+        </div>
+    </div>
+
+
+    <!--*********************购物车为空时*************************-->
+    <div class="cart-noprod">
+        <div class="noprod-main">
+            <h2>您的购物车还是空的，赶紧行动吧！</h2>
+            <p>
+                <span>您可以前往：</span>
+                <a href="index.html">首页</a>
+                <span class="line">|</span>
+                <a href="http://www.qinqinbaby.com/vip">特卖精选</a>
+            </p>
+            <div class="noprod-search fn_clear">
+                <form action="http://www.qinqinbaby.com/home/search/index" method="get">
+                    <!--<input type="hidden" class="txt fl" name="sesearch" value="1">-->
+                    <input type="text" name="content" placeholder="搜搜您想要的商品" class="txt">
+                    <input type="submit" value="" class="sub">
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!--***********************更多商品***********************************-->
+    <div class="more-product cart">
+        <h2><b></b>与您浏览相关的商品</h2>
+    </div>
+
+    <div class="sliderbox">
+        <div class="arrow-btn btn-left">
+            <span></span>
+        </div>
+        <div class="slider-box">
+            <div class="slider"></div>
+        </div>
+        <div class="arrow-btn btn-right">
+            <span></span>
+        </div>
+    </div>
+
+    <!--***********************commonfoot****************************-->
+    <div class="commonfoot">
+        <div class="footinner">
+            <!--************新手入门等等*********-->
+            <div class="footinner-top">
+                <div class="left">
+                    <dl>
+                        <dt>新手入门</dt>
+                        <dd><a href="http://www.qinqinbaby.com/home/footer/gwzn.html" target="_blank">购物指南</a></dd>
+                        <dd><a href="http://www.qinqinbaby.com/home/footer/hyjs.html" target="_blank">会员介绍</a></dd>
+                        <dd><a href="http://www.qinqinbaby.com/home/footer/fwxy.html" target="_blank">服务协议</a></dd>
+                        <dd><a href="http://www.qinqinbaby.com/home/footer/lxkf.html" target="_blank">联系客服</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>售后服务</dt>
+                        <dd><a href="http://www.qinqinbaby.com/home/footer/thsm.html" target="_blank">退款说明</a></dd>
+                        <dd><a href="http://www.qinqinbaby.com/home/footer/thzc.html" target="_blank">退货政策</a></dd>
+                        <dd><a href="http://www.qinqinbaby.com/home/footer/hhzc.html" target="_blank">换货政策</a></dd>
+                        <dd><a href="http://www.qinqinbaby.com/home/index/question" target="_blank">顾客意见</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>支付方式</dt>
+                        <dd><a href="http://www.qinqinbaby.com/home/footer/hdfk.html" target="_blank">货到付款</a></dd>
+                        <dd><a href="http://www.qinqinbaby.com/home/footer/zxzf.html" target="_blank">在线支付</a></dd>
+                        <dd><a href="http://www.qinqinbaby.com/home/footer/yhj.html" target="_blank">优惠券使用</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>配送服务</dt>
+                        <dd><a href="http://www.qinqinbaby.com/home/footer/pszc.html" target="_blank">配送政策</a></dd>
+                        <dd><a href="http://www.qinqinbaby.com/home/footer/psfw.html" target="_blank">配送范围</a></dd>
+                        <dd><a href="http://www.qinqinbaby.com/home/footer/psfwcx.html" target="_blank">配送服务查询</a></dd>
+                        <dd><a href="http://www.qinqinbaby.com/home/footer/psyf.html" target="_blank">配送运费</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>常见问题</dt>
+                        <dd><a href="http://www.qinqinbaby.com/home/footer/gwxz.html" target="_blank">购物须知</a></dd>
+                        <dd><a href="http://www.qinqinbaby.com/home/footer/spysyqs.html" target="_blank">商品验货与签收</a>
+                        </dd>
+                        <dd><a href="http://www.qinqinbaby.com/home/footer/dzspgm.html" target="_blank">大宗商品购买</a></dd>
+                        <dd><a href="http://www.qinqinbaby.com/home/footer/mmzh.html" target="_blank">找回密码</a></dd>
+                    </dl>
+                </div>
+
+                <div class="middle"></div>
+
+                <div class="right">
+                    <ul class="right-ul">
+                        <li>
+                            <div>
+                                <a href="javascript:;" target="_blank">
+                                    <img src="resource/imgs/wx.jpg" alt="">
+                                </a>
+                            </div>
+                            <p>亲亲宝贝官方微信</p>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="http://weibo.com/qinqinbaby2003" target="_blank">
+                                    <img src="resource/imgs/xl.jpg">
+                                </a>
+                            </div>
+                            <p>亲亲宝贝新浪微博</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!--***********关于我们 、友情链接等*****************-->
+            <div class="footinner-btm">
+                <!--************关于我们**************-->
+                <div class="msglink">
+                    <a href="http://www.qinqinbaby.com/home/index/promise" target="_blank">关于我们</a>
+                    <span>|</span>
+                    <a href="javascript:;" taget="_blank">爱计划公益活动</a>
+                    <span>|</span>
+                    <a href="http://www.cnkids.org/" taget="_blank">中国儿童服装周</a>
+                    <span>|</span>
+                    <a href="http://www.qinqinbaby.com/home/footer/lxkf" target="_blank">联系我们</a>
+                    <span>|</span>
+                    <a href="http://www.qinqinbaby.com/home/footer/job" target="_blank">招贤纳士</a>
+                    <span>|</span>
+                    <a href="http://www.qinqinbaby.com/home/footer/zhaoshang" target="_blank">商家入驻</a>
+                </div>
+
+                <!--*************友情链接*************-->
+                <div class="friend-links">
+                    <span>友情链接:</span>
+                    <div class="link-index">
+                        <ul>
+                            <li><a href="http://zs.fang.com/" target="_blank">房天下</a></li>
+                            <li><a href="http://www.azb22.com/" target="_blank">化妆品代理</a></li>
+                            <li><a href="http://www.vipcn.com/" target="_blank">清风手游网</a></li>
+                            <li><a href="http://www.bianwanjia.com/" target="_blank">便玩家</a></li>
+                            <li><a href="http://www.yqdown.com/" target="_blank">友情手机站</a></li>
+                            <li><a href="http://www.9553.com/" target="_blank">9553下载</a></li>
+                            <li><a href="http://www.cr173.com/" target="_blank">西西软件园</a></li>
+                            <li><a href="http://www.97sky.cn/" target="_blank">就去天空</a></li>
+                            <li><a href="http://game.91.com/" target="_blank">91游戏网</a></li>
+                            <li><a href="http://www.downcc.com/" target="_blank">绿色资源网</a></li>
+                            <li><a href="http://mydown.yesky.com/" target="_blank">天极下载</a></li>
+                            <li><a href="http://www.xpgod.com/" target="_blank">系统天堂</a></li>
+                            <li><a href="http://www.downxia.com/" target="_blank">当下软件园</a></li>
+                            <li><a href="http://www.hackhome.com/" target="_blank">网侠软件</a></li>
+                            <li><a href="http://www.greenxf.com/" target="_blank">绿色先锋</a></li>
+                            <li><a href="http://bbs.cnmo.com/" target="_blank">手机中国</a></li>
+                            <li><a href="http://www.bizport.cn/" target="_blank">信析宝</a></li>
+                            <li><a href="http://zs.fang.com/" target="_blank">房天下</a></li>
+                            <li><a href="http://www.azb22.com/" target="_blank">化妆品代理</a></li>
+                            <li><a href="http://www.vipcn.com/" target="_blank">清风手游网</a></li>
+                            <li><a href="http://www.bianwanjia.com/" target="_blank">便玩家</a></li>
+                            <li><a href="http://www.yqdown.com/" target="_blank">友情手机站</a></li>
+                            <li><a href="http://www.9553.com/" target="_blank">9553下载</a></li>
+                            <li><a href="http://www.cr173.com/" target="_blank">西西软件园</a></li>
+                            <li><a href="http://www.97sky.cn/" target="_blank">就去天空</a></li>
+                            <li><a href="http://game.91.com/" target="_blank">91游戏网</a></li>
+                            <li><a href="http://www.downcc.com/" target="_blank">绿色资源网</a></li>
+                            <li><a href="http://mydown.yesky.com/" target="_blank">天极下载</a></li>
+                            <li><a href="http://www.xpgod.com/" target="_blank">系统天堂</a></li>
+                            <li><a href="http://www.downxia.com/" target="_blank">当下软件园</a></li>
+                            <li><a href="http://www.hackhome.com/" target="_blank">网侠软件</a></li>
+                            <li><a href="http://www.greenxf.com/" target="_blank">绿色先锋</a></li>
+                            <li><a href="http://bbs.cnmo.com/" target="_blank">手机中国</a></li>
+                            <li><a href="http://www.bizport.cn/" target="_blank">信析宝</a></li>
+                            <li><a href="http://zs.fang.com/" target="_blank">房天下</a></li>
+                            <li><a href="http://www.azb22.com/" target="_blank">化妆品代理</a></li>
+                            <li><a href="http://www.vipcn.com/" target="_blank">清风手游网</a></li>
+                            <li><a href="http://www.bianwanjia.com/" target="_blank">便玩家</a></li>
+                            <li><a href="http://www.yqdown.com/" target="_blank">友情手机站</a></li>
+                            <li><a href="http://www.9553.com/" target="_blank">9553下载</a></li>
+                            <li><a href="http://www.cr173.com/" target="_blank">西西软件园</a></li>
+                            <li><a href="http://www.97sky.cn/" target="_blank">就去天空</a></li>
+                            <li><a href="http://game.91.com/" target="_blank">91游戏网</a></li>
+                            <li><a href="http://www.downcc.com/" target="_blank">绿色资源网</a></li>
+                            <li><a href="http://mydown.yesky.com/" target="_blank">天极下载</a></li>
+                            <li><a href="http://www.xpgod.com/" target="_blank">系统天堂</a></li>
+                            <li><a href="http://www.downxia.com/" target="_blank">当下软件园</a></li>
+                            <li><a href="http://www.hackhome.com/" target="_blank">网侠软件</a></li>
+                            <li><a href="http://www.greenxf.com/" target="_blank">绿色先锋</a></li>
+                            <li><a href="http://bbs.cnmo.com/" target="_blank">手机中国</a></li>
+                            <li><a href="http://www.bizport.cn/" target="_blank">信析宝</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!--*************京备号*************-->
+                <div class="msg">&copy;&nbsp;&nbsp;亲亲宝贝网2003-2014 qinqinbaby.com All Rights Reserved&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;京公安网备11010802015478号
+                    京ICP备11017831号-1
+                </div>
+
+
+                <!--*************客服电话*************-->
+                <div class="tel"><b></b>客服热线：400-610-9993 周一~周日 9:00~21:00</div>
+
+                <!--*************备案信息*************-->
+                <div class="imglink">
+                    <ul>
+                        <li class="li1">
+                            <a href="javascript:void(0);">
+                                <img src="resource/imgs/lice1.jpg">
+                            </a>
+                        </li>
+                        <li class="li3">
+                            <a href="javascript:void(0);">
+                                <img src="resource/imgs/lice3.jpg">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <!--***********************bodyright****************************-->
+
+    <div class="bodyright">
+        <!-- 头图  -->
+        <img src="resource/imgs/fix01.png">
+        <!-- 邮箱 -->
+        <a href="mailto:kefu@qinqinbaby.com" title="kefu@qinqinbaby.com">
+            <img src="resource/imgs/fix02.png">
+        </a>
+        <!--联系客服-->
+        <a href="javascript:;">
+            <img src="resource/imgs/fix03.png">
+        </a>
+
+        <!-- 微信公众号 -->
+        <img src="resource/imgs/fix04.png">
+        <a href="#" class="top">
+            <img src="resource/imgs/fix05.png">
+        </a>
+    </div>
+
+</div>
+
+<script type="text/html" id="template-cart">
+    <tr>
+        <td height="106">
+            <input style="width: 100px;" type="checkbox" checked="checked" class="selone" name="checkbox1">
+        </td>
+        <td>
+            <div style="width:76px;">
+                <a href="detail.html" target="_blank">
+                    <img src="{{src-cart}}" class="toDetail">
+                </a>
+            </div>
+        </td>
+        <td class="td3">
+            <p><a href="detail.html" target="_blank">{{descript}}</a></p>
+            <p>型号:{{type}}</p>
+        </td>
+        <td class="td4">
+            <div style="width:120px;">{{price}}</div>
+        </td>
+        <td class="td5">
+            <span class="prev"></span>
+            <input type="text" value="{{num}}" class="buy-num">
+            <span class="next"></span>
+        </td>
+        <td>{{count-money}}</td>
+        <td class="last"><a href="javascript:;">删除</a></td>
+    </tr>
+</script>
+
+<script type="text/html" id="template-product">
+    <div class="product">
+        <div class="proimg">
+            <a href="detail.html" target="_blank">
+                <img src="{{src-product}}" class="toDetail">
+            </a>
+        </div>
+        <p class="descp">{{miaoshu}}</p>
+        <p class="type">{{type}}</p>
+        <h4>{{price}}</h4>
+        <input type="button" class="addScan">
+    </div>
+</script>
+
+
+<script src="vendor/jQuery/jquery-1.12.1.js"></script>
+<script src="js/common.js"></script>
+<script src="js/cookie.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>

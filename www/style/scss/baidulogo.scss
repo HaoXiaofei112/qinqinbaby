@@ -1,0 +1,232 @@
+
+@import "public";
+.baidu-float{
+  position: fixed;
+  z-index:9999;
+  right:0;
+  top:80px;
+  width:220px;
+  height:250px;
+  overflow: hidden;
+
+  .baidu-main{
+
+    .baidu-main-header{
+      height: 32px;
+      padding-left: 16px;
+      padding-right: 17px;
+      background-color: #445fb0;
+
+      .icon{
+        float: left;
+        width: 66px;
+        height: 19px;
+        //background-position: 0 -154px;
+        margin-top: 6px;
+        margin-right: 10px;
+        display: inline-block;
+        background: url('../../resource/imgs/creditPop.png') 0 -154px no-repeat;
+      }
+
+      .baidu-main-fold{
+        float: right;
+        margin-top: 8px;
+        _margin-top: 8px;
+        opacity: 0.8;
+        filter: alpha(opacity=80);
+        cursor: pointer;
+        text-decoration: none;
+
+        .fold{
+          display: inline-block;
+          color: #fff;
+          font-style: normal;
+          font-size: 12px;
+          padding-right: 5px;
+        }
+
+        .arrow{
+          display: inline-block;
+          width: 0;
+          height: 0;
+          line-height: 0;
+          font-size: 0;
+          padding: 0;
+          border: 5px solid transparent;
+          vertical-align: middle;
+          margin-top: -1px;
+        }
+
+        .right{
+          border-right: 0;
+          border-left: 5px solid #fff;
+        }
+      }
+    }
+
+    .baidu-main-content{
+      border: 1px solid #e5e8e3;
+      border-top: 0;
+      background-color: #fff;
+     // background-color: pink;
+
+      .comp-info{
+        border-bottom: 1px dashed #e5e8e3;
+        padding: 14px 0 12px 13px;
+        height: 81px;
+        overflow: hidden;
+
+        .comp-name{
+          width: 195px;
+          height: 19px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          font-size: 14px;
+          color: #000;
+        }
+
+        .level-info{
+          margin-top: 6px;
+          overflow: hidden;
+
+          .i-v{
+            width: 39px;
+            height: 39px;
+            margin-right: 12px;
+            margin-top: 3px;
+            float: left;
+            display: inline-block;
+            background: url('../../resource/imgs/creditPop.png') 0 0 no-repeat;
+          }
+
+          .i-v-2{
+            background-position: -40px 0;
+          }
+
+          .level-tip{
+            width: 145px;
+            vertical-align: top;
+            line-height: 16px;
+            overflow: hidden;
+            float: left;
+            color: #999;
+
+            p{
+              margin-bottom: 3px;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+
+            .b{
+              font-family: Arial;
+              color: #32a0ff;
+            }
+
+            .ext{
+              overflow: hidden;
+
+              .ext-left{
+                float: left;
+              }
+
+              .ext-right{
+                float: right;
+
+                a{
+                  color: #999;
+                }
+
+                .em{
+                  font-style: normal;
+                  color: #cfcfcf;
+                  margin: 0 7px;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .search-more{
+        background-color: #f7f7f6;
+        padding: 1px 14px 14px 13px;
+
+        .search-more-info{
+          color: #19202a;
+          margin-top: 11px;
+
+          .title{
+            overflow: hidden;
+            color: #333;
+
+            span{
+              float: left;
+            }
+
+            a{
+              float: right;
+              color: #32a0ff;
+            }
+          }
+
+          .info{
+            margin-top: 7px;
+            color: #666;
+            white-space: nowrap;
+            overflow: hidden;
+          }
+        }
+
+        .search-more-search{
+          margin-top: 14px;
+          width: 192px;
+          height: 30px;
+          position: relative;
+
+          input{
+            display: block;
+            border: 1px solid #e0e0e0;
+            outline: none;
+            background: #fff;
+            width: 162px;
+            height: 28px;
+            line-height: 26px;
+            color: #7a7a7a;
+            padding-right: 28px;
+            text-indent: 5px;
+            font-size: 14px;
+          }
+
+          i{
+            display: inline-block;
+            background: url('../../resource/imgs/creditPop.png') 0 0 no-repeat;
+          }
+
+          .i-search{
+            width: 13px;
+            height: 14px;
+            position: absolute;
+            background-position: 0 -61px;
+            right: 11px;
+            top: 8px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+
+  .baidu-unfold{
+    position: absolute;
+    display: none;
+    width: 38px;
+    height: 37px;
+    background: url('../../resource/imgs/creditPop.png') no-repeat;
+    cursor: pointer;
+    background-position: 0 -75px;
+    top: 0px;
+    right: 0px;
+  }
+}

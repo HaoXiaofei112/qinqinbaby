@@ -1,0 +1,773 @@
+@charset "UTF-8";
+body, ol, ul, h1, h2, h3, h4, h5, h6, p, th, td, dl, dd, form, fieldset, legend, input, textarea, select {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: 12px "瀹嬩綋","Arial Narrow",HELVETICA;
+  background: #fff;
+}
+
+a {
+  color: #172c45;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #f00;
+  text-decoration: none;
+}
+
+em {
+  font-style: normal;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  border: 0;
+  vertical-align: middle;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+p {
+  word-wrap: break-word;
+}
+
+.ind {
+  text-indent: 2em;
+}
+
+.ind10 {
+  text-indent: 10px;
+}
+
+.noborder {
+  border: 0;
+}
+
+body {
+  background: #e7f8ff;
+}
+body .content {
+  width: 1000px;
+  margin: 0 auto;
+}
+body .content .content-nav {
+  font-size: 12px;
+  height: 40px;
+  line-height: 40px;
+}
+body .content .content-nav ul li {
+  float: left;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+}
+body .content .content-nav ul li a {
+  color: #000;
+}
+body .content .content-nav ul li span {
+  position: absolute;
+  top: 10px;
+  right: -8px;
+  background: url("../../resource/imgs/mian.png") no-repeat 0 0;
+  width: 14px;
+  height: 14px;
+}
+body .content .content-main {
+  position: relative;
+  padding-top: 20px;
+  background: #fff;
+  border: 1px solid #e2f5f8;
+  overflow: hidden;
+}
+body .content .content-main .content-main-left {
+  width: 402px;
+  padding-left: 20px;
+  float: left;
+}
+body .content .content-main .content-main-left .magnify {
+  position: relative;
+  z-index: 1;
+  max-height: 368px;
+  width: 368px;
+  height: 368px;
+}
+body .content .content-main .content-main-left .magnify img {
+  width: 368px;
+  height: 368px;
+}
+body .content .content-main .content-main-left .magnify .small {
+  height: 368px;
+  width: 368px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  float: left;
+}
+body .content .content-main .content-main-left .magnify .float {
+  width: 150px;
+  height: 150px;
+  opacity: 0.5;
+  background: gray;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+  cursor: all-scroll;
+}
+body .content .content-main .content-main-left .magnify .big {
+  width: 368px;
+  height: 368px;
+  background: url("../../resource/imgs/1-big.jpg") no-repeat 0 0;
+  background-size: 903px 903px;
+  float: left;
+  position: absolute;
+  left: 368px;
+  top: 0;
+  display: none;
+  border: 1px solid #bfbdbf;
+}
+body .content .content-main .content-main-left .content-main-left-mask {
+  margin: 16px 20px 0;
+  overflow: hidden;
+  width: 300px;
+  padding-left: 14px;
+  position: relative;
+}
+body .content .content-main .content-main-left .content-main-left-mask .left {
+  width: 14px;
+  height: 22px;
+  background: url("../../resource/imgs/mian.png") -2px -20px no-repeat;
+  position: absolute;
+  left: 0px;
+  top: 23px;
+  cursor: pointer;
+}
+body .content .content-main .content-main-left .content-main-left-mask .right {
+  width: 14px;
+  height: 22px;
+  background: url("../../resource/imgs/mian.png") -20px -20px no-repeat;
+  position: absolute;
+  right: 0px;
+  top: 23px;
+  cursor: pointer;
+}
+body .content .content-main .content-main-left .content-main-left-mask .detail {
+  width: 330px;
+  overflow: hidden;
+  height: 80px;
+  position: relative;
+}
+body .content .content-main .content-main-left .content-main-left-mask .detail ul {
+  width: 510px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+body .content .content-main .content-main-left .content-main-left-mask .detail ul li {
+  background: none repeat scroll 0 0 transparent;
+  float: left;
+  height: auto;
+  margin: 0 4px 0 0;
+  overflow: hidden;
+  padding: 0px;
+  border: 1px solid #CDCDCD;
+  cursor: pointer;
+}
+body .content .content-main .content-main-left .content-main-left-mask .detail ul li img {
+  display: block;
+}
+body .content .content-main .content-main-left .content-main-left-share {
+  float: left;
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: inline;
+}
+body .content .content-main .content-main-left .content-main-left-share .content-main-left-share-style .txt {
+  float: left;
+  font-size: 12px;
+  text-decoration: none;
+  line-height: 18px !important;
+}
+body .content .content-main .content-main-left .content-main-left-share .content-main-left-share-style .icon {
+  text-align: left;
+  overflow: hidden;
+  display: block !important;
+  height: 16px !important;
+  line-height: 16px !important;
+  padding-left: 20px !important;
+  cursor: pointer;
+}
+body .content .content-main .content-main-left .content-main-left-share .content-main-left-share-style .qzone {
+  background: url("../../resource/imgs/qzone.jpg") no-repeat;
+}
+body .content .content-main .content-main-left .content-main-left-share .content-main-left-share-style .sina {
+  background: url("../../resource/imgs/sina.jpg") no-repeat;
+}
+body .content .content-main .content-main-left .content-main-left-share .content-main-left-share-style .qq {
+  background: url("../../resource/imgs/qq.jpg") no-repeat;
+}
+body .content .content-main .content-main-left .content-main-left-share .content-main-left-share-style .renren {
+  background: url("../../resource/imgs/renren.jpg") no-repeat;
+}
+body .content .content-main .content-main-left .content-main-left-share .content-main-left-share-style .kaixin {
+  background: url("../../resource/imgs/kaixin.jpg") no-repeat;
+}
+body .content .content-main .content-main-left .collect {
+  float: left;
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: inline;
+  cursor: pointer;
+}
+body .content .content-main .content-main-right {
+  width: 576px;
+  float: left;
+}
+body .content .content-main .content-main-right .content-main-right-head {
+  width: 530px;
+  height: 24px;
+  background: url(../../resource/imgs/tob-bg.jpg) no-repeat;
+  text-align: center;
+}
+body .content .content-main .content-main-right .content-main-right-head .content-main-right-head-brand {
+  height: 24px;
+  line-height: 24px;
+  margin: 0 auto;
+}
+body .content .content-main .content-main-right .content-main-right-head .content-main-right-head-brand span {
+  background: #fff;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 14px;
+}
+body .content .content-main .content-main-right .content-main-right-descp {
+  width: 530px;
+  line-height: 24px;
+  font-size: 16px;
+  font-weight: 700;
+  padding-top: 18px;
+  padding-bottom: 20px;
+}
+body .content .content-main .content-main-right .content-main-right-descp h1 {
+  line-height: 1.5em;
+  overflow: hidden;
+  font-weight: 700;
+  font-family: arial, 'microsoft yahei';
+  font-size: 16px;
+}
+body .content .content-main .content-main-right .content-main-right-descp .span2 {
+  overflow: hidden;
+  font-family: arial, 'microsoft yahei';
+  color: #e3393c;
+  font-size: 14px;
+  line-height: 20px;
+  word-break: break-all;
+}
+body .content .content-main .content-main-right .content-main-right-price {
+  overflow: hidden;
+}
+body .content .content-main .content-main-right .content-main-right-price .content-main-right-price-1 {
+  font-size: 28px;
+  color: #fd5908;
+  font-weight: 800;
+  float: left;
+}
+body .content .content-main .content-main-right .content-main-right-price .content-main-right-price-1 span {
+  font-size: 22px;
+}
+body .content .content-main .content-main-right .content-main-right-price .content-main-right-price-2 {
+  width: 40px;
+  height: 28px;
+  background: url("../../resource/imgs/mian.png") -3px -55px no-repeat;
+  font-size: 12px;
+  color: #fff;
+  line-height: 28px;
+  text-align: center;
+  float: left;
+  margin-left: 8px;
+  display: inline;
+}
+body .content .content-main .content-main-right .content-main-right-price .content-main-right-price-3 {
+  float: left;
+  font-size: 12px;
+  color: #666;
+  margin-top: 12px;
+  margin-left: 20px;
+  display: inline;
+}
+body .content .content-main .content-main-right .content-main-right-price .content-main-right-price-3 .span2 {
+  text-decoration: line-through;
+}
+body .content .content-main .content-main-right .content-main-right-price .content-main-right-price-3 .span3 {
+  margin-left: 10px;
+}
+body .content .content-main .content-main-right .content-main-right-guarantee {
+  width: 530px;
+  height: 45px;
+  background: url("../../resource/imgs/mian.png") -39px 0px no-repeat;
+  margin-top: 14px;
+  position: relative;
+  line-height: 45px;
+}
+body .content .content-main .content-main-right .content-main-right-guarantee .content-main-right-guarantee-clock {
+  position: absolute;
+  top: 8px;
+  left: 20px;
+  background: url("../../resource/imgs/mian.png") -3px -94px no-repeat;
+  width: 36px;
+  height: 30px;
+}
+body .content .content-main .content-main-right .content-main-right-guarantee .content-main-right-guarantee-txt {
+  font-size: 12px;
+  margin-left: 64px;
+}
+body .content .content-main .content-main-right .content-main-right-guarantee .content-main-right-guarantee-txt span {
+  float: left;
+}
+body .content .content-main .content-main-right .content-main-right-type {
+  font-size: 12px;
+  margin-top: 12px;
+  width: 440px;
+  position: relative;
+  border: 1px solid #fff;
+  overflow: hidden;
+}
+body .content .content-main .content-main-right .content-main-right-type .content-main-type1 {
+  float: left;
+  padding: 18px 14px;
+}
+body .content .content-main .content-main-right .content-main-right-type .content-main-type1 .content-main-type1-1 {
+  float: left;
+  margin-top: 6px;
+  margin-right: 20px;
+  padding-bottom: 25px;
+  display: inline;
+}
+body .content .content-main .content-main-right .content-main-right-type .content-main-type1 .content-main-type1-2 {
+  float: left;
+  width: 340px;
+}
+body .content .content-main .content-main-right .content-main-right-type .content-main-type1 .content-main-type1-2 .stage {
+  padding: 5px 10px;
+  border: 1px solid #73dff4;
+  float: left;
+  margin-right: 6px;
+  display: inline;
+  margin-bottom: 8px;
+  cursor: pointer;
+  position: relative;
+  min-width: 40px;
+  text-align: center;
+}
+body .content .content-main .content-main-right .content-main-right-type .content-main-type1 .content-main-type1-2 .stage i {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 9px;
+  height: 9px;
+}
+body .content .content-main .content-main-right .content-main-right-type .content-main-type1 .content-main-type1-2 .stage .stage-bg {
+  background: url("../../resource/imgs/mian.png") -45px -57px no-repeat;
+}
+body .content .content-main .content-main-right .content-main-right-num {
+  font-size: 12px;
+  width: 530px;
+  height: 26px;
+  margin-top: 8px;
+  margin-left: 16px;
+  margin-bottom: 50px;
+}
+body .content .content-main .content-main-right .content-main-right-num .content-main-right-num-1 {
+  float: left;
+  height: 26px;
+  line-height: 26px;
+}
+body .content .content-main .content-main-right .content-main-right-num .content-main-right-num-2 {
+  float: left;
+  margin-left: 20px;
+  display: inline;
+}
+body .content .content-main .content-main-right .content-main-right-num .content-main-right-num-2 .content-main-right-num-2-a {
+  float: left;
+}
+body .content .content-main .content-main-right .content-main-right-num .content-main-right-num-2 .content-main-right-num-2-a span {
+  width: 20px;
+  height: 24px;
+  text-align: center;
+  line-height: 24px;
+  font-size: 16px;
+  cursor: pointer;
+  border: 1px solid #aeaeae;
+  float: left;
+  display: inline;
+}
+body .content .content-main .content-main-right .content-main-right-num .content-main-right-num-2 .content-main-right-num-2-a input {
+  float: left;
+  height: 24px;
+  line-height: 24px;
+  border: 1px solid #aeaeae;
+  border-left: none;
+  border-right: none;
+  text-align: center;
+}
+body .content .content-main .content-main-right .content-main-right-num .content-main-right-num-2 .limit {
+  float: left;
+  height: 26px;
+  line-height: 26px;
+  padding-left: 10px;
+}
+body .content .content-main .content-main-right .buy-cart {
+  width: 400px;
+  height: 54px;
+  cursor: pointer;
+  overflow: hidden;
+}
+body .content .content-main .content-main-right .buy-cart .input-cart {
+  margin-left: 20px;
+  float: left;
+  width: 170px;
+  height: 54px;
+  border: none;
+  background: url("../../resource/imgs/mian.png") no-repeat 0 -143px;
+}
+body .content .content-main .content-main-right .buy-cart .buy-now {
+  float: left;
+  margin-left: 30px;
+  width: 140px;
+  height: 54px;
+  border: none;
+  background: url("../../resource/imgs/mian.png") no-repeat -860px -946px;
+}
+body .content .content-main .content-main-right .content-main-right-share {
+  width: 530px;
+  height: 60px;
+  line-height: 44px;
+  font-size: 12px;
+  margin-left: 16px;
+  color: #999999;
+}
+body .content .content-main .content-main-right .content-main-right-share span {
+  color: #5ca1e5;
+  display: inline-block;
+}
+body .content .content-main .content-main-right .content-main-right-share p {
+  color: #999999;
+  margin-top: -15px;
+}
+body .content .content-introduce {
+  background: #fff;
+  overflow: hidden;
+}
+body .content .content-introduce .content-introduce-head {
+  width: 1000px;
+  height: 20px;
+  background: #f0fbfd;
+}
+body .content .content-introduce .content-introduce-nav {
+  height: 46px;
+  line-height: 46px;
+  border-top: 2px solid #71d9ed;
+  background: #eaeaea;
+  width: 1000px;
+  z-index: 888;
+}
+body .content .content-introduce .content-introduce-nav ul {
+  float: left;
+}
+body .content .content-introduce .content-introduce-nav ul li {
+  float: left;
+  font-size: 14px;
+  width: 100px;
+  text-align: center;
+}
+body .content .content-introduce .content-introduce-nav ul li a {
+  color: #000;
+  font-weight: 700;
+  float: left;
+  width: 100px;
+  text-align: center;
+}
+body .content .content-introduce .content-introduce-nav ul li .prod-intro {
+  background: #71d9ed;
+  color: #fff;
+}
+body .content .content-introduce .content-introduce-xiangqing .content-introduce-xiangqing-1 {
+  height: 40px;
+  line-height: 50px;
+  font-size: 22px;
+  width: 300px;
+  padding-top: 10px;
+  margin-left: 17px;
+}
+body .content .content-introduce .content-introduce-xiangqing .content-introduce-xiangqing-1 .content-introduce-xiangqing-1-a {
+  width: 274px;
+  height: 38px;
+  background: url("../../resource/imgs/mian.png") 0px -374px no-repeat;
+}
+body .content .content-introduce .content-introduce-xiangqing-2 {
+  border-top: 2px solid #c2c2c2;
+  position: relative;
+}
+body .content .content-introduce .content-introduce-xiangqing-2 .content-introduce-xiangqing-2-a {
+  position: absolute;
+  height: 2px;
+  width: 274px;
+  background: #666666;
+  overflow: hidden;
+  left: 20px;
+  top: -2px;
+}
+body .content .content-introduce .content-introduce-xiangqing-2 .content-introduce-xiangqing-2-b {
+  padding-bottom: 40px;
+  margin-top: 20px;
+  text-align: center;
+}
+body .content .content-introduce .content-introduce-product-jieshao {
+  overflow: hidden;
+}
+body .content .content-introduce .content-introduce-product-jieshao .content-introduce-product-jieshao-1 {
+  height: 40px;
+  line-height: 50px;
+  font-size: 22px;
+  width: 300px;
+  padding-top: 10px;
+  margin-left: 17px;
+}
+body .content .content-introduce .content-introduce-product-jieshao .content-introduce-product-jieshao-1 .content-introduce-product-jieshao-1-a {
+  width: 274px;
+  height: 38px;
+  background: url("../../resource/imgs/mian.png") 0px -304px no-repeat;
+}
+body .content .content-introduce .content-introduce-product-jieshao .content-introduce-product-jieshao-2 {
+  border-top: 2px solid #c2c2c2;
+  position: relative;
+}
+body .content .content-introduce .content-introduce-product-jieshao .content-introduce-product-jieshao-2 .content-introduce-product-jieshao-2-a {
+  position: absolute;
+  height: 2px;
+  width: 274px;
+  background: #666666;
+  overflow: hidden;
+  left: 20px;
+  top: -2px;
+}
+body .content .content-introduce .content-introduce-product-jieshao .content-introduce-product-jieshao-2 .content-introduce-product-jieshao-2-b {
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+body .content .content-introduce .content-introduce-product-jieshao .content-introduce-product-jieshao-2 .content-introduce-product-jieshao-2-b .content-introduce-product-jieshao-2-b-1 {
+  width: 120px;
+  height: 112px;
+  background: url("../../resource/imgs/mian.png") -251px -55px no-repeat;
+  margin-left: 30px;
+  margin-top: 25px;
+  float: left;
+  display: inline;
+}
+body .content .content-introduce .content-introduce-product-jieshao .content-introduce-product-jieshao-2 .content-introduce-product-jieshao-2-b .content-introduce-product-jieshao-2-b-2 {
+  font-size: 12px;
+  float: left;
+  width: 754px;
+  line-height: 16px;
+  margin-left: 45px;
+  margin-top: 54px;
+  display: inline;
+}
+body .content .content-introduce .content-introduce-canshu {
+  overflow: hidden;
+}
+body .content .content-introduce .content-introduce-canshu .content-introduce-canshu-1 {
+  height: 40px;
+  line-height: 50px;
+  font-size: 22px;
+  width: 300px;
+  padding-top: 10px;
+  margin-left: 17px;
+}
+body .content .content-introduce .content-introduce-canshu .content-introduce-canshu-1 .content-introduce-canshu-1-a {
+  width: 274px;
+  height: 38px;
+  background: url("../../resource/imgs/mian.png") 0px -340px no-repeat;
+}
+body .content .content-introduce .content-introduce-canshu .content-introduce-canshu-2 {
+  border-top: 2px solid #c2c2c2;
+  position: relative;
+}
+body .content .content-introduce .content-introduce-canshu .content-introduce-canshu-2 .content-introduce-canshu-2-a {
+  position: absolute;
+  height: 2px;
+  width: 294px;
+  background: #666666;
+  overflow: hidden;
+  left: 20px;
+  top: -2px;
+}
+body .content .content-introduce .content-introduce-canshu .content-introduce-canshu-2 .content-introduce-canshu-2-b {
+  padding-bottom: 40px;
+}
+body .content .content-introduce .content-introduce-canshu .content-introduce-canshu-2 .content-introduce-canshu-2-b table {
+  margin-left: 110px;
+  margin-top: 24px;
+  float: left;
+  width: 486px;
+  display: inline;
+}
+body .content .content-introduce .content-introduce-canshu .content-introduce-canshu-2 .content-introduce-canshu-2-b table tr {
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 24px;
+}
+body .content .content-introduce .content-introduce-canshu .content-introduce-canshu-2 .content-introduce-canshu-2-b table tr td {
+  text-align: left;
+  font-weight: normal;
+}
+body .content .content-introduce .content-introduce-canshu .content-introduce-canshu-2 .content-introduce-canshu-2-b table tr .td1 {
+  width: 100px;
+  height: 24px;
+}
+body .content .content-introduce .content-introduce-canshu .content-introduce-canshu-2 .content-introduce-canshu-2-b table tr .td2 {
+  color: #999;
+}
+body .content .content-introduce .content-introduce-canshu .content-introduce-canshu-2 .content-introduce-canshu-2-b .content-introduce-canshu-2-b-1 {
+  float: left;
+  margin-top: 44px;
+  width: 210px;
+  height: 210px;
+  overflow: hidden;
+}
+body .content .content-introduce .content-introduce-jieshao .content-introduce-jieshao-1 {
+  height: 40px;
+  line-height: 50px;
+  font-size: 22px;
+  width: 300px;
+  padding-top: 10px;
+  margin-left: 17px;
+}
+body .content .content-introduce .content-introduce-jieshao .content-introduce-jieshao-1 .content-introduce-jieshao-1-a {
+  width: 274px;
+  height: 35px;
+  background: url("../../resource/imgs/mian.png") 0px -443px no-repeat;
+}
+body .content .content-introduce .content-introduce-jieshao .content-introduce-jieshao-2 {
+  border-top: 2px solid #c2c2c2;
+  position: relative;
+}
+body .content .content-introduce .content-introduce-jieshao .content-introduce-jieshao-2 .content-introduce-jieshao-2-a {
+  position: absolute;
+  height: 2px;
+  width: 274px;
+  background: #666666;
+  overflow: hidden;
+  left: 20px;
+  top: -2px;
+}
+body .content .content-introduce .content-introduce-jieshao .content-introduce-jieshao-2 .content-introduce-jieshao-2-b {
+  padding-bottom: 40px;
+  margin-top: 40px;
+  text-align: center;
+}
+body .content .content-introduce .content-introduce-method .content-introduce-method-1 {
+  height: 40px;
+  line-height: 50px;
+  font-size: 22px;
+  width: 300px;
+  padding-top: 10px;
+  margin-left: 17px;
+}
+body .content .content-introduce .content-introduce-method .content-introduce-method-1 .content-introduce-method-1-a {
+  width: 274px;
+  height: 38px;
+  background: url("../../resource/imgs/mian.png") 0px -408px no-repeat;
+}
+body .content .content-introduce .content-introduce-method .content-introduce-method-2 {
+  border-top: 2px solid #c2c2c2;
+  position: relative;
+}
+body .content .content-introduce .content-introduce-method .content-introduce-method-2 .content-introduce-method-2-a {
+  position: absolute;
+  height: 2px;
+  width: 274px;
+  background: #666666;
+  overflow: hidden;
+  left: 20px;
+  top: -2px;
+}
+body .content .content-introduce .content-introduce-method .content-introduce-method-2 .content-introduce-method-2-b {
+  padding-bottom: 40px;
+  margin-top: 40px;
+  text-align: center;
+}
+body .content .content-introduce .content-introduce-remark .content-introduce-remark-1 {
+  height: 40px;
+  line-height: 50px;
+  font-size: 22px;
+  width: 300px;
+  padding-top: 10px;
+  margin-left: 17px;
+}
+body .content .content-introduce .content-introduce-remark .content-introduce-remark-1 .content-introduce-remark-1-a {
+  width: 274px;
+  height: 35px;
+  background: url("../../resource/imgs/mian.png") 0px -511px no-repeat;
+}
+body .content .content-introduce .content-introduce-remark .content-introduce-remark-2 {
+  border-top: 2px solid #c2c2c2;
+  position: relative;
+}
+body .content .content-introduce .content-introduce-remark .content-introduce-remark-2 .content-introduce-remark-2-a {
+  position: absolute;
+  height: 2px;
+  width: 274px;
+  background: #666666;
+  overflow: hidden;
+  left: 20px;
+  top: -2px;
+}
+body .content .content-introduce .content-introduce-remark .content-introduce-remark-2 .content-introduce-remark-2-review {
+  padding: 0px 28px;
+  margin-top: 14px;
+  overflow: hidden;
+}
+body .content .content-introduce .content-introduce-aboutus .content-introduce-aboutus-1 {
+  height: 40px;
+  line-height: 50px;
+  font-size: 22px;
+  width: 300px;
+  padding-top: 10px;
+  margin-left: 17px;
+}
+body .content .content-introduce .content-introduce-aboutus .content-introduce-aboutus-1 .content-introduce-aboutus-1-a {
+  width: 274px;
+  height: 38px;
+  background: url("../../resource/imgs/mian.png") 0px -538px no-repeat;
+}
+body .content .content-introduce .content-introduce-aboutus .content-introduce-aboutus-2 {
+  border-top: 2px solid #c2c2c2;
+  position: relative;
+}
+body .content .content-introduce .content-introduce-aboutus .content-introduce-aboutus-2 .content-introduce-aboutus-2-a {
+  position: absolute;
+  height: 2px;
+  width: 294px;
+  background: #666666;
+  overflow: hidden;
+  left: 20px;
+  top: -2px;
+}
+body .content .content-introduce .content-introduce-aboutus .content-introduce-aboutus-2 .content-introduce-aboutus-2-b {
+  width: 940px;
+  margin: 0 auto;
+}
